@@ -7,45 +7,36 @@
 //
 
 import UIKit
-import Firebase
 
 class ProgramDetailViewController: UIViewController {
     
     @IBOutlet weak var programTitleLabel: UILabel!
     @IBOutlet weak var programImageView: UIImageView!
-    @IBOutlet weak var programDescriptionTextView: UITextView!
-    
-    var userDefaults = UserDefaults.standard
-    let ref = Database.database().reference()
-    
-    var celectedFestivalID: String = ""
-    var currentViewtype: String = ""
-    var currentProgramID: String = ""
+    @IBOutlet weak var descriptionLabel: UILabel!
+
+    var data: (title: String, content: String, imageURL: String, id: String)!
+    var stageData: (title: String, content: String, time: String, imageURL: String, id: String)!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        celectedFestivalID = userDefaults.string(forKey: "celectedFestivalID") ?? ""
-        currentViewtype = userDefaults.string(forKey: "currentViewType") ?? ""
-        currentProgramID = userDefaults.string(forKey: "currentProgramID") ?? ""
-        loadProgram()
         loadUIDesign()
+        loadData()
     }
     
-    func loadProgram(){
-        ref.child("学園祭一覧").child(celectedFestivalID).child("Programme").child(currentViewtype).child(currentProgramID).observe(.value, with: { [weak self](snapshot) -> Void in
-            
-            let getProgrammeName = String(describing: snapshot.childSnapshot(forPath: "ProgrammeName").value!)
-            let getProgrammeDescription = String(describing: snapshot.childSnapshot(forPath: "ProgrammeDescription").value!)
-            let getProgrammeImageURL = String(describing: snapshot.childSnapshot(forPath: "ProgrammeImageURL").value ?? "https://firebasestorage.googleapis.com/v0/b/schoolfestivalnavi.appspot.com/o/noimage.png?alt=media&token=df162152-5fca-4785-b9ef-e29f4783fd2e")
-            let getProgrammeCategory = String(describing: snapshot.childSnapshot(forPath: "Category").value!)
-            
-            let url = URL(string: getProgrammeImageURL)
-            
-            self?.programTitleLabel.text = getProgrammeName
-            self?.programDescriptionTextView.text = getProgrammeDescription
-            self?.programImageView.sd_setImage(with: url, completed: nil)
-    
-        })
+    func loadData() {
+        if data != nil {
+            programTitleLabel.text = data.title
+            descriptionLabel.text = data.content
+            //        descriptionLabel.text = "this is a\n \n tesssssssstaklsd;fjalk;fjeaiowfanznvcxm,.nioa;fejiwaskdfcnjkl;asdhjfqehrwjiofnaznvckxznv;ahjfu;qewnfjkasnfjashfe;qwnfasnv.m,zxnvjk;ajfjk;jwqioensxnzcvm.ncvas;fnio;weqfnhjkadsmnczmx,.ncjka;siod;fhniewoq;hnfcjadsk;cnxmz,.........nfjksadhfas;"
+            programImageView.loadImageAsynchronously(url: data.imageURL)
+        }
+        if stageData != nil {
+            programTitleLabel.text = stageData.title
+            descriptionLabel.text = stageData.content
+            //        descriptionLabel.text = "this is a\n \n tesssssssstaklsd;fjalk;fjeaiowfanznvcxm,.nioa;fejiwaskdfcnjkl;asdhjfqehrwjiofnaznvckxznv;ahjfu;qewnfjkasnfjashfe;qwnfasnv.m,zxnvjk;ajfjk;jwqioensxnzcvm.ncvas;fnio;weqfnhjkadsmnczmx,.ncjka;siod;fhniewoq;hnfcjadsk;cnxmz,.........nfjksadhfas;"
+            programImageView.loadImageAsynchronously(url: stageData.imageURL)
+        }
+        
     }
     
     @IBAction func onClickClose(_ sender: Any) {
@@ -53,9 +44,6 @@ class ProgramDetailViewController: UIViewController {
     }
     
     func loadUIDesign() {
-        programDescriptionTextView.layer.cornerRadius = 10.0
-        programDescriptionTextView.layer.masksToBounds = true
-        
         programImageView.contentMode = .scaleAspectFill
         programImageView.layer.masksToBounds = true
         programImageView.layer.cornerRadius = 15

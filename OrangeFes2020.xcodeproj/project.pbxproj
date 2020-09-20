@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A42D1BA3DF552652E8F026A /* Pods_OrangeFes2020.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66D32856F5227F1B0B9BFA2 /* Pods_OrangeFes2020.framework */; };
+		6A99587C8D89EE7587279E12 /* Pods_OrangeFes2020_OrangeFes2020UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F6E06A5FA42DEAC473CF66 /* Pods_OrangeFes2020_OrangeFes2020UITests.framework */; };
+		B3370A40696153C991D7C261 /* Pods_OrangeFes2020Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12DFEEB188BF4502D7CF40E6 /* Pods_OrangeFes2020Tests.framework */; };
 		B664FE02250C46830074314B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664FE01250C46830074314B /* AppDelegate.swift */; };
 		B664FE04250C46830074314B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664FE03250C46830074314B /* SceneDelegate.swift */; };
 		B664FE06250C46830074314B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664FE05250C46830074314B /* ViewController.swift */; };
@@ -15,6 +18,17 @@
 		B664FE0E250C46840074314B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B664FE0C250C46840074314B /* LaunchScreen.storyboard */; };
 		B664FE19250C46840074314B /* OrangeFes2020Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664FE18250C46840074314B /* OrangeFes2020Tests.swift */; };
 		B664FE24250C46840074314B /* OrangeFes2020UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664FE23250C46840074314B /* OrangeFes2020UITests.swift */; };
+		B664FE36250C486D0074314B /* PagerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B664FE32250C486D0074314B /* PagerView.storyboard */; };
+		B664FE38250C486D0074314B /* ProgramDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664FE34250C486D0074314B /* ProgramDetailViewController.swift */; };
+		B664FE3B250C490A0074314B /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664FE3A250C490A0074314B /* NavigationViewController.swift */; };
+		B664FE42250C4AE20074314B /* ParentProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664FE40250C4AE20074314B /* ParentProgramViewController.swift */; };
+		B664FE44250C4AE20074314B /* ProgramStageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664FE3E250C4AE20074314B /* ProgramStageViewController.swift */; };
+		B664FE45250C4AE20074314B /* ProgramShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664FE3D250C4AE20074314B /* ProgramShopViewController.swift */; };
+		B664FE46250C4AE20074314B /* PagerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664FE41250C4AE20074314B /* PagerTableViewCell.swift */; };
+		B664FE52250C54EA0074314B /* PagerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B664FE3F250C4AE20074314B /* PagerTableViewCell.xib */; };
+		B664FE5A2513746F0074314B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B664FE592513746F0074314B /* GoogleService-Info.plist */; };
+		B664FE5D25139BD10074314B /* JKG-M_3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B664FE5C25139BC40074314B /* JKG-M_3.ttf */; };
+		B664FE5F25139BDD0074314B /* JKG-L_3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B664FE5E25139BDD0074314B /* JKG-L_3.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06473DFAC5A902BB2C05ECC7 /* Pods-OrangeFes2020-OrangeFes2020UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeFes2020-OrangeFes2020UITests.debug.xcconfig"; path = "Target Support Files/Pods-OrangeFes2020-OrangeFes2020UITests/Pods-OrangeFes2020-OrangeFes2020UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		12DFEEB188BF4502D7CF40E6 /* Pods_OrangeFes2020Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrangeFes2020Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27F6E06A5FA42DEAC473CF66 /* Pods_OrangeFes2020_OrangeFes2020UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrangeFes2020_OrangeFes2020UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		334C2CD0A495E38D5C65D54B /* Pods-OrangeFes2020Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeFes2020Tests.debug.xcconfig"; path = "Target Support Files/Pods-OrangeFes2020Tests/Pods-OrangeFes2020Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3364D9639AC3CE68FEB9142F /* Pods-OrangeFes2020-OrangeFes2020UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeFes2020-OrangeFes2020UITests.release.xcconfig"; path = "Target Support Files/Pods-OrangeFes2020-OrangeFes2020UITests/Pods-OrangeFes2020-OrangeFes2020UITests.release.xcconfig"; sourceTree = "<group>"; };
+		977411B783FF9C3CF813DC6C /* Pods-OrangeFes2020.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeFes2020.release.xcconfig"; path = "Target Support Files/Pods-OrangeFes2020/Pods-OrangeFes2020.release.xcconfig"; sourceTree = "<group>"; };
+		AF421E62A2F68BC05D5D50AE /* Pods-OrangeFes2020Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeFes2020Tests.release.xcconfig"; path = "Target Support Files/Pods-OrangeFes2020Tests/Pods-OrangeFes2020Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B664FDFE250C46830074314B /* OrangeFes2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrangeFes2020.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B664FE01250C46830074314B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B664FE03250C46830074314B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +70,19 @@
 		B664FE1F250C46840074314B /* OrangeFes2020UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrangeFes2020UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B664FE23250C46840074314B /* OrangeFes2020UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeFes2020UITests.swift; sourceTree = "<group>"; };
 		B664FE25250C46840074314B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B664FE32250C486D0074314B /* PagerView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PagerView.storyboard; sourceTree = "<group>"; };
+		B664FE34250C486D0074314B /* ProgramDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramDetailViewController.swift; sourceTree = "<group>"; };
+		B664FE3A250C490A0074314B /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		B664FE3D250C4AE20074314B /* ProgramShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramShopViewController.swift; sourceTree = "<group>"; };
+		B664FE3E250C4AE20074314B /* ProgramStageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramStageViewController.swift; sourceTree = "<group>"; };
+		B664FE3F250C4AE20074314B /* PagerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PagerTableViewCell.xib; sourceTree = "<group>"; };
+		B664FE40250C4AE20074314B /* ParentProgramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentProgramViewController.swift; sourceTree = "<group>"; };
+		B664FE41250C4AE20074314B /* PagerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerTableViewCell.swift; sourceTree = "<group>"; };
+		B664FE592513746F0074314B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B664FE5C25139BC40074314B /* JKG-M_3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JKG-M_3.ttf"; sourceTree = "<group>"; };
+		B664FE5E25139BDD0074314B /* JKG-L_3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JKG-L_3.ttf"; sourceTree = "<group>"; };
+		B66D32856F5227F1B0B9BFA2 /* Pods_OrangeFes2020.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrangeFes2020.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF1EC6604E292703C816A0C1 /* Pods-OrangeFes2020.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeFes2020.debug.xcconfig"; path = "Target Support Files/Pods-OrangeFes2020/Pods-OrangeFes2020.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A42D1BA3DF552652E8F026A /* Pods_OrangeFes2020.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3370A40696153C991D7C261 /* Pods_OrangeFes2020Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +106,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A99587C8D89EE7587279E12 /* Pods_OrangeFes2020_OrangeFes2020UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62E3D259D493D2FACB749674 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B66D32856F5227F1B0B9BFA2 /* Pods_OrangeFes2020.framework */,
+				27F6E06A5FA42DEAC473CF66 /* Pods_OrangeFes2020_OrangeFes2020UITests.framework */,
+				12DFEEB188BF4502D7CF40E6 /* Pods_OrangeFes2020Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B643CAB92517837A00877899 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B664FE41250C4AE20074314B /* PagerTableViewCell.swift */,
+				B664FE3F250C4AE20074314B /* PagerTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		B664FDF5250C46830074314B = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +139,8 @@
 				B664FE17250C46840074314B /* OrangeFes2020Tests */,
 				B664FE22250C46840074314B /* OrangeFes2020UITests */,
 				B664FDFF250C46830074314B /* Products */,
+				FF6E8173C24E46FBA86E7D27 /* Pods */,
+				62E3D259D493D2FACB749674 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +157,14 @@
 		B664FE00250C46830074314B /* OrangeFes2020 */ = {
 			isa = PBXGroup;
 			children = (
-				B664FE01250C46830074314B /* AppDelegate.swift */,
+				B664FE07250C46830074314B /* Main.storyboard */,
+				B664FE31250C46D40074314B /* Program */,
+				B664FE5B25139BB30074314B /* Font */,
 				B664FE03250C46830074314B /* SceneDelegate.swift */,
 				B664FE05250C46830074314B /* ViewController.swift */,
-				B664FE07250C46830074314B /* Main.storyboard */,
+				B664FE01250C46830074314B /* AppDelegate.swift */,
+				B664FE3A250C490A0074314B /* NavigationViewController.swift */,
+				B664FE592513746F0074314B /* GoogleService-Info.plist */,
 				B664FE0A250C46840074314B /* Assets.xcassets */,
 				B664FE0C250C46840074314B /* LaunchScreen.storyboard */,
 				B664FE0F250C46840074314B /* Info.plist */,
@@ -128,6 +190,41 @@
 			path = OrangeFes2020UITests;
 			sourceTree = "<group>";
 		};
+		B664FE31250C46D40074314B /* Program */ = {
+			isa = PBXGroup;
+			children = (
+				B664FE32250C486D0074314B /* PagerView.storyboard */,
+				B664FE40250C4AE20074314B /* ParentProgramViewController.swift */,
+				B664FE3D250C4AE20074314B /* ProgramShopViewController.swift */,
+				B664FE3E250C4AE20074314B /* ProgramStageViewController.swift */,
+				B664FE34250C486D0074314B /* ProgramDetailViewController.swift */,
+				B643CAB92517837A00877899 /* Cell */,
+			);
+			path = Program;
+			sourceTree = "<group>";
+		};
+		B664FE5B25139BB30074314B /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				B664FE5C25139BC40074314B /* JKG-M_3.ttf */,
+				B664FE5E25139BDD0074314B /* JKG-L_3.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		FF6E8173C24E46FBA86E7D27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF1EC6604E292703C816A0C1 /* Pods-OrangeFes2020.debug.xcconfig */,
+				977411B783FF9C3CF813DC6C /* Pods-OrangeFes2020.release.xcconfig */,
+				06473DFAC5A902BB2C05ECC7 /* Pods-OrangeFes2020-OrangeFes2020UITests.debug.xcconfig */,
+				3364D9639AC3CE68FEB9142F /* Pods-OrangeFes2020-OrangeFes2020UITests.release.xcconfig */,
+				334C2CD0A495E38D5C65D54B /* Pods-OrangeFes2020Tests.debug.xcconfig */,
+				AF421E62A2F68BC05D5D50AE /* Pods-OrangeFes2020Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B664FE28250C46840074314B /* Build configuration list for PBXNativeTarget "OrangeFes2020" */;
 			buildPhases = (
+				975902C21119F3ACF674E7CF /* [CP] Check Pods Manifest.lock */,
 				B664FDFA250C46830074314B /* Sources */,
 				B664FDFB250C46830074314B /* Frameworks */,
 				B664FDFC250C46830074314B /* Resources */,
+				028B1E84F15E887D0940EA7B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +251,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B664FE2B250C46840074314B /* Build configuration list for PBXNativeTarget "OrangeFes2020Tests" */;
 			buildPhases = (
+				93B518BA094D802E9EAC0D43 /* [CP] Check Pods Manifest.lock */,
 				B664FE10250C46840074314B /* Sources */,
 				B664FE11250C46840074314B /* Frameworks */,
 				B664FE12250C46840074314B /* Resources */,
@@ -170,9 +270,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B664FE2E250C46840074314B /* Build configuration list for PBXNativeTarget "OrangeFes2020UITests" */;
 			buildPhases = (
+				F12001C4AB547C6C7CEE97C4 /* [CP] Check Pods Manifest.lock */,
 				B664FE1B250C46840074314B /* Sources */,
 				B664FE1C250C46840074314B /* Frameworks */,
 				B664FE1D250C46840074314B /* Resources */,
+				C24CF34EC8F6F9A65FEED1EF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,8 +335,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B664FE0E250C46840074314B /* LaunchScreen.storyboard in Resources */,
+				B664FE36250C486D0074314B /* PagerView.storyboard in Resources */,
+				B664FE52250C54EA0074314B /* PagerTableViewCell.xib in Resources */,
+				B664FE5D25139BD10074314B /* JKG-M_3.ttf in Resources */,
 				B664FE0B250C46840074314B /* Assets.xcassets in Resources */,
 				B664FE09250C46830074314B /* Main.storyboard in Resources */,
+				B664FE5F25139BDD0074314B /* JKG-L_3.ttf in Resources */,
+				B664FE5A2513746F0074314B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +361,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		028B1E84F15E887D0940EA7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrangeFes2020/Pods-OrangeFes2020-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrangeFes2020/Pods-OrangeFes2020-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OrangeFes2020/Pods-OrangeFes2020-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93B518BA094D802E9EAC0D43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrangeFes2020Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		975902C21119F3ACF674E7CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrangeFes2020-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C24CF34EC8F6F9A65FEED1EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrangeFes2020-OrangeFes2020UITests/Pods-OrangeFes2020-OrangeFes2020UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrangeFes2020-OrangeFes2020UITests/Pods-OrangeFes2020-OrangeFes2020UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OrangeFes2020-OrangeFes2020UITests/Pods-OrangeFes2020-OrangeFes2020UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F12001C4AB547C6C7CEE97C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrangeFes2020-OrangeFes2020UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B664FDFA250C46830074314B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B664FE06250C46830074314B /* ViewController.swift in Sources */,
+				B664FE42250C4AE20074314B /* ParentProgramViewController.swift in Sources */,
 				B664FE02250C46830074314B /* AppDelegate.swift in Sources */,
+				B664FE44250C4AE20074314B /* ProgramStageViewController.swift in Sources */,
+				B664FE45250C4AE20074314B /* ProgramShopViewController.swift in Sources */,
+				B664FE38250C486D0074314B /* ProgramDetailViewController.swift in Sources */,
+				B664FE46250C4AE20074314B /* PagerTableViewCell.swift in Sources */,
+				B664FE3B250C490A0074314B /* NavigationViewController.swift in Sources */,
 				B664FE04250C46830074314B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +648,7 @@
 		};
 		B664FE29250C46840074314B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF1EC6604E292703C816A0C1 /* Pods-OrangeFes2020.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +667,7 @@
 		};
 		B664FE2A250C46840074314B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 977411B783FF9C3CF813DC6C /* Pods-OrangeFes2020.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +686,7 @@
 		};
 		B664FE2C250C46840074314B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 334C2CD0A495E38D5C65D54B /* Pods-OrangeFes2020Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +709,7 @@
 		};
 		B664FE2D250C46840074314B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF421E62A2F68BC05D5D50AE /* Pods-OrangeFes2020Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +732,7 @@
 		};
 		B664FE2F250C46840074314B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06473DFAC5A902BB2C05ECC7 /* Pods-OrangeFes2020-OrangeFes2020UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +753,7 @@
 		};
 		B664FE30250C46840074314B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3364D9639AC3CE68FEB9142F /* Pods-OrangeFes2020-OrangeFes2020UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

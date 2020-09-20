@@ -13,44 +13,33 @@ class ParentProgramViewController: ButtonBarPagerTabStripViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var userDefaults = UserDefaults.standard
-    var presentIndex: Int = 0
-    
     override func viewDidLoad() {
         loadDesign()
         super.viewDidLoad()
         collectionView.backgroundColor = UIColor(named: "SystemDarkBackground")
-        //pagerview indexの初期値
-        presentIndex = 0
     }
     
     //今開いているタブとindexをuserdefaultsに保存する
     override func viewWillAppear(_ animated: Bool) {
-        userDefaults.set(currentIndex, forKey: "ProgramPresentIndex")
-        userDefaults.set("ProgramPager", forKey: "currentPagerType")
         DispatchQueue.main.async {
-                self.moveToViewController(at: 3, animated: false)
+                self.moveToViewController(at: 2, animated: false)
         }
         DispatchQueue.main.async {
                 self.moveToViewController(at: 0, animated: false)
         }
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-    }
-    
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
         let child_1 = UIStoryboard(name: "PagerView", bundle: nil).instantiateViewController(identifier: "ProgramShop")
         let child_2 = UIStoryboard(name: "PagerView", bundle: nil).instantiateViewController(identifier: "ProgramStage")
-        let child_3 = UIStoryboard(name: "PagerView", bundle: nil).instantiateViewController(identifier: "ProgramExhibition")
-        return [child_1, child_2, child_3]
+        return [child_1, child_2]
     }
     
     func loadDesign() {
-        self.settings.style.buttonBarBackgroundColor = UIColor(named: "SystemDarkBackground")
-        self.settings.style.buttonBarItemBackgroundColor = UIColor(named: "SystemDarkBackground")
-        self.settings.style.selectedBarBackgroundColor = UIColor(named: "Custom_themeColor")!
-        self.settings.style.buttonBarItemTitleColor = UIColor(named: "Custom_themeColor")
+        self.settings.style.buttonBarBackgroundColor = UIColor(named: "themeColor")
+        self.settings.style.buttonBarItemBackgroundColor = UIColor(named: "themeColor")
+        self.settings.style.selectedBarBackgroundColor = UIColor.white
+        self.settings.style.buttonBarItemTitleColor = UIColor.white
         self.settings.style.selectedBarHeight = 4.0
         self.settings.style.buttonBarItemsShouldFillAvailableWidth = true
         self.settings.style.buttonBarLeftContentInset = 10

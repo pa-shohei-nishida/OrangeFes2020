@@ -1,24 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="foV-3w-ziO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="agy-Ug-J3q">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="Yqi-VG-cfw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3bl-bZ-hPF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2wR-IH-Jxn">
+                                <rect key="frame" x="0.0" y="88" width="414" height="32"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oGs-rZ-9UU">
+                                <rect key="frame" x="0.0" y="119" width="414" height="694"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2wR-IH-Jxn" firstAttribute="leading" secondItem="Rmk-Ss-k3s" secondAttribute="leading" id="7XR-mC-RGQ"/>
+                            <constraint firstItem="Rmk-Ss-k3s" firstAttribute="trailing" secondItem="2wR-IH-Jxn" secondAttribute="trailing" id="Gz2-HE-bGW"/>
+                            <constraint firstItem="Rmk-Ss-k3s" firstAttribute="bottom" secondItem="oGs-rZ-9UU" secondAttribute="bottom" id="PZ4-mE-Bqn"/>
+                            <constraint firstAttribute="trailing" secondItem="oGs-rZ-9UU" secondAttribute="trailing" id="QEx-PG-9ZT"/>
+                            <constraint firstItem="oGs-rZ-9UU" firstAttribute="top" secondItem="2wR-IH-Jxn" secondAttribute="bottom" id="Qny-yP-70F"/>
+                            <constraint firstItem="oGs-rZ-9UU" firstAttribute="leading" secondItem="Rmk-Ss-k3s" secondAttribute="leading" id="Wwe-2R-ajY"/>
+                            <constraint firstItem="2wR-IH-Jxn" firstAttribute="top" secondItem="Rmk-Ss-k3s" secondAttribute="top" id="gb2-ib-RnK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rmk-Ss-k3s"/>
                     </view>
+                    <navigationItem key="navigationItem" id="CJl-c3-7Pw"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Be5-i6-PSm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="587" y="838"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="fjH-e6-v1y">
+            <objects>
+                <tabBarController id="foV-3w-ziO" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YQt-fX-rgE" customClass="TabBarController" customModule="OrangeFes2020" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="themeColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="8Dh-le-6Oi" kind="relationship" relationship="viewControllers" id="C1s-54-sAE"/>
+                        <segue destination="647-42-K9v" kind="relationship" relationship="viewControllers" id="aCs-C2-yu9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cmr-8k-0T1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-645" y="-625"/>
+        </scene>
+        <!--企画一覧-->
+        <scene sceneID="JHt-Gv-HjQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Dh-le-6Oi" customClass="NavigationViewController" customModule="OrangeFes2020" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="企画一覧" image="list-1" id="jiu-7k-9Pt"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RRg-el-GA6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HsO-HY-wSd" kind="relationship" relationship="rootViewController" id="tvS-OT-BwR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kKW-zM-uAi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1488" y="129"/>
+        </scene>
+        <!--抽選-->
+        <scene sceneID="ir4-BU-jLD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="647-42-K9v" customClass="NavigationViewController" customModule="OrangeFes2020" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="抽選" image="albums-1" id="rqC-t1-3Ft"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lvR-kj-pba">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Yqi-VG-cfw" kind="relationship" relationship="rootViewController" id="e9M-xt-X8v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b7U-lf-nty" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="586.95652173913049" y="128.57142857142856"/>
+        </scene>
+        <!--企画一覧-->
+        <scene sceneID="dHw-oP-41P">
+            <objects>
+                <viewController id="HsO-HY-wSd" customClass="ParentProgramViewController" customModule="OrangeFes2020" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r8p-C0-7ZV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OyA-wS-oue" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="88" width="414" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="cd4-1X-zVc"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Hgz-88-HOj">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DNb-H4-PDd">
+                                <rect key="frame" x="0.0" y="128" width="414" height="685"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Exe-JC-jb8">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="OyA-wS-oue" firstAttribute="leading" secondItem="77G-fs-hcr" secondAttribute="leading" id="96F-KQ-AgB"/>
+                            <constraint firstItem="DNb-H4-PDd" firstAttribute="top" secondItem="OyA-wS-oue" secondAttribute="bottom" id="FfM-0I-QqP"/>
+                            <constraint firstItem="OyA-wS-oue" firstAttribute="trailing" secondItem="77G-fs-hcr" secondAttribute="trailing" id="KkJ-6p-odd"/>
+                            <constraint firstItem="77G-fs-hcr" firstAttribute="bottom" secondItem="DNb-H4-PDd" secondAttribute="bottom" id="Mko-is-hqA"/>
+                            <constraint firstItem="77G-fs-hcr" firstAttribute="trailing" secondItem="DNb-H4-PDd" secondAttribute="trailing" id="Svp-pI-Jky"/>
+                            <constraint firstItem="DNb-H4-PDd" firstAttribute="leading" secondItem="77G-fs-hcr" secondAttribute="leading" id="WID-HT-fii"/>
+                            <constraint firstItem="OyA-wS-oue" firstAttribute="top" secondItem="77G-fs-hcr" secondAttribute="top" id="yIA-ha-kGA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="77G-fs-hcr"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="企画一覧" id="SxF-my-OK9"/>
+                    <connections>
+                        <outlet property="buttonBarView" destination="OyA-wS-oue" id="ZX7-ob-LoX"/>
+                        <outlet property="collectionView" destination="DNb-H4-PDd" id="i2N-OW-kxE"/>
+                        <outlet property="containerView" destination="DNb-H4-PDd" id="yXz-GN-LJw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FZX-v4-RLJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1488" y="838"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="albums-1" width="30" height="30"/>
+        <image name="list-1" width="30" height="30"/>
+        <namedColor name="themeColor">
+            <color red="1" green="0.64313725490196083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

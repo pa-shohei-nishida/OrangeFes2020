@@ -1,0 +1,6 @@
+framework module Pods_OrangeFes2020Tests {
+  umbrella header "Pods-OrangeFes2020Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
