@@ -17,7 +17,7 @@ class ProgramShopViewController: UIViewController, UITableViewDelegate, UITableV
     var userDefaults = UserDefaults.standard
     let ref = Firestore.firestore()
     
-    var data:[(title: String, content: String, imageURL: String, id: String)] = []
+    var data:[(title: String, content: String, imageURL: String, videoURL: String, id: String)] = []
     
     var programData:[(title: String, content: String, imageName: String, place: String)] = [
         (title: "美術部", content: "作品展示", imageName:"", place: ""),
@@ -30,7 +30,7 @@ class ProgramShopViewController: UIViewController, UITableViewDelegate, UITableV
         (title: "クイズ研究会（非公認）", content: "早押し体験会", imageName:"", place: "")
     ]
     
-    var giveData: (title: String, content: String, imageURL: String, id: String)!
+    var giveData: (title: String, content: String, imageURL: String, videoURL: String, id: String)!
 
     var descriptionView = ProgramDetailViewController()
     
@@ -58,7 +58,8 @@ class ProgramShopViewController: UIViewController, UITableViewDelegate, UITableV
                     guard let title = document.data()["title"] as? String else { return }
                     guard let content = document.data()["content"] as? String else { return }
                     let imageURL = document.data()["imageURL"] as? String ?? ""
-                    self.data.append((title: title, content: content, id: id, imageURL: imageURL))
+                    let videoURL  = document.data()["videoURL"] as? String ?? ""
+                    self.data.append((title: title, content: content, id: id, imageURL: imageURL, videoURL: videoURL))
                     self.programTableView.reloadData()
                 }
             }

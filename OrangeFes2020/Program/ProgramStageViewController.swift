@@ -18,8 +18,8 @@ class ProgramStageViewController: UIViewController, UITableViewDelegate, UITable
     var userDefaults = UserDefaults.standard
     let ref = Firestore.firestore()
     
-    var stageData:[(title: String, content: String, time: String, imageURL: String, id: String)] = []
-    var giveStageData: (title: String, content: String, time: String, imageURL: String, id: String)!
+    var stageData:[(title: String, content: String, time: String, imageURL: String, videoURL: String, id: String)] = []
+    var giveStageData: (title: String, content: String, time: String, imageURL: String, videoURL: String, id: String)!
 
     var descriptionView = ProgramDetailViewController()
     
@@ -53,7 +53,8 @@ class ProgramStageViewController: UIViewController, UITableViewDelegate, UITable
                     let time = document.data()["time"] as? String ?? "設定されていません"
                     let content = document.data()["content"] as? String ?? "設定されていません"
                     let imageURL = document.data()["imageURL"] as? String ?? ""
-                    self.stageData.append((title: title, content: content, time: time, id: id, imageURL: imageURL))
+                    let videoURL  = document.data()["imageURL"] as? String ?? ""
+                    self.stageData.append((title: title, content: content, time: time, id: id, imageURL: imageURL, videoURL: videoURL))
                     self.programTableView.reloadData()
                 }
             }
@@ -73,7 +74,8 @@ class ProgramStageViewController: UIViewController, UITableViewDelegate, UITable
                     let time = document.data()["time"] as? String ?? "設定されていません"
                     let content = document.data()["content"] as? String ?? "設定されていません"
                     let imageURL = document.data()["imageURL"] as? String ?? ""
-                    self.stageData.append((title: title, content: content, time: time, id: id, imageURL: imageURL))
+                    let videoURL  = document.data()["imageURL"] as? String ?? ""
+                    self.stageData.append((title: title, content: content, time: time, id: id, imageURL: imageURL, videoURL: videoURL))
                     self.programTableView.reloadData()
                 }
             }
